@@ -28,17 +28,17 @@ const musics = [{
     file: "0.mp3",
     image: "./img/3.jpg",
 }, {
-    id: 1,
+    id: 2,
     title: 'Beautiful in White',
     file: '1.mp3',
     image: './img/1.jpg',
 }, {
-    id: 1,
+    id: 3,
     title: 'Dù Cho Mai Về Sau',
     file: '2.mp3',
     image: './img/2.jpg',
 }, {
-    id: 1,
+    id: 4,
     title: 'Nơi Này Có Anh',
     file: '3.mp3',
     image: './img/0.jpg',
@@ -56,6 +56,7 @@ function handleEndedSong() {
     if (isRepeat) {
         //handleRepeat
         isPlaying = true
+        playPause()
     } else {
         changeSong(1)
     }
