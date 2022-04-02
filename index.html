@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Slab:wght@200;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body class="darkTheme">
+    <div class="music">
+        <div class="theme">
+            <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/275036550_518630066336741_6087774881412604802_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=aee45a&_nc_ohc=E6ijdJ_leJoAX9bFgjR&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVLdIlUQCHPE42ZJNPVNNKL8lMJuhgG4gAxpdJHTgWtA3A&oe=62599AE5"
+                alt="">
+        </div>
+        <h4 class="title-music">Beautiful in white</h4>
+        <input type="range" name="range" id="range" class="range">
+        <audio src="./music/0.mp3" id="song"></audio>
+        <div class="timer">
+            <div class="duration">00:00</div>
+            <div class="remaining">-3:00</div>
+        </div>
+        <div class="controls">
+            <ion-icon name="play-back" class="rewind"></ion-icon>
+            <div class="play">
+                <div class="player">
+                    <ion-icon name="play" class="play-icon"></ion-icon>
+                </div>
+            </div>
+            <ion-icon name="play-forward" class="forward"></ion-icon>
+            <ion-icon name="repeat" class="repeat"></ion-icon>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
